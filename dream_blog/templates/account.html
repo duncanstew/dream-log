@@ -1,0 +1,96 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="h-screen w-full flex flex-col">
+        <div class="flex flex-col justify-center w-full mx-auto max-w-xl">
+            <div class="flex flex-row">
+                <div class="prof-image h-24 w-24 mt-4 ml-2">
+                    <img class="rounded-full h-24 w-24 object-cover" src="{{ image_file }}">
+                </div>
+                <div class="flex flex-col ml-4 mt-6">
+                    <h1 class="font-bold text-3xl"> {{ current_user.username }}</h1>
+                    <h2 class="font-semibold text-lg text-gray-900"> {{ current_user.email }} </h2>
+                </div>
+            </div>
+
+            <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 my-4" method="POST" action="" enctype="multipart/form-data">
+                {{ form.hidden_tag() }} <!-- Setting CRF token-->
+                <div class="border-b border-gray-600 mb-4 border-opacity-75">
+                    <h1 class="font-semibold text-gray-700"> Account Info</h1>
+                </div>
+                <div class="mb-4">
+                    {{ form.username.label(class="block text-gray-700 text-sm font-bold mb-2")}}
+
+                    {% if form.username.errors %}
+                        {{ form.username(class="shadow appearance-none border border-red-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline")}}
+                            {% for error in form.username.errors %}
+                                <span class="text-xs text-red-400"> {{ error }} </span>
+                            {% endfor %}
+                    {% else %}
+                        {{ form.username(class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline")}}
+                    {% endif %}
+                </div>
+                <div class="mb-4">
+                    {{ form.email.label(class="block text-gray-700 text-sm font-bold mb-2")}}
+
+                    {% if form.email.errors %}
+                    {{ form.email(class="shadow appearance-none border border-red-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline")}}
+                        {% for error in form.email.errors %}
+                            <span class="text-xs text-red-400"> {{ error }}</span>
+                        {% endfor %}
+                    {% else %}
+                        {{ form.email(class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline")}}
+                    {% endif %} 
+                </div>
+                <div class="mb-4">
+                    {{ form.image_file.label()}}
+                    {{ form.image_file(class="block text-gray-700 text-sm font-bold mb-2")}}
+                    {% if form.image_file.errors %}
+                        {% for error in form.image_file.errors %}
+                            <span class="text-red-800"> {{ error }} </span>
+                        {% endfor %}
+                    {% endif %}
+
+                </div>
+
+
+                <div class="flex items-center justify-between">
+                    {{ form.submit(class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline")}}
+                </div>
+            </form>
+            
+
+
+        </div>
+        <div class="">
+            <!-- 
+            <div class="my-12 flex flex-row flex-wrap jusify-between justify-center bg-green-400 ">
+                <div class="h-48 w-64 bg-gray-700 mx-12 my-6 rounded-lg">
+
+                </div>
+    
+                <div class="h-48 w-64 bg-gray-700 mx-12 my-6 rounded-lg">
+    
+                </div>
+    
+                <div class="h-48 w-64 bg-gray-700 mx-12 my-6 rounded-lg">
+    
+                </div>
+    
+                <div class="h-48 w-64 bg-gray-700 mx-12 my-6 rounded-lg">
+    
+                </div>
+    
+                <div class="h-48 w-64 bg-gray-700 mx-12 my-6 rounded-lg">
+    
+                </div>
+    
+                <div class="h-48 w-64 bg-gray-700 mx-12 my-6 rounded-lg">
+    
+                </div>
+            </div>
+
+            -->
+        </div>
+
+    </div>
+{% endblock content %} 
