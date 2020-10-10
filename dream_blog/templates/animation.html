@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/fullpage.min.css')}}" />
+    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/extrastyle.css')}}" /> -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/extrastyle.css')}}" />
+    {% block javascript %}
+        <script src="{{ url_for('static', filename='scripts/app.js')  }}"> </script>
+        <script src="{{ url_for('static', filename='scripts/fullpage.min.js')  }}"> </script>
+    {% endblock %}  
+    <title></title>
+  </head>
+  <body>
+    <div id="fullpage">
+      <section class="section s1">
+        <h1>Home Decorations</h1>
+      </section>
+      <section class="section s2">
+        <h1>Different Styles</h1>
+        <div class="description">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non nam
+            inventore illum! Libero nisi optio consequuntur tenetur soluta
+            debitis
+          </p>
+          <p>
+            saepe eligendi, dicta velit at quod dolores asperiores facilis
+            nostrum eius molestias et maxime earum? Tenetur nam magni quae
+            tempore beatae rerum impedit quasi id iste sapiente, amet asperiores
+            maxime eius.
+          </p>
+        </div>
+        <img src="/static/imgs/chair2.png" class="chair" class="chair" />
+        <img src="{{ url_for('static', filename='imgs/chair3.png')  }}" class="chair"/>
+        <img src="{{ url_for('static', filename='imgs/chair1.png')  }}" class="chair"/>
+      </section>
+      <section class="section s3">
+        <h1>Amazing Quality!</h1>
+      </section>
+      <section class="section s4">
+        <h1> Other </h1>
+      </section>
+    </div>
+
+
+  </body>
+</html>

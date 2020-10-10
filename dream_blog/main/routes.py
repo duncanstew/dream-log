@@ -19,3 +19,7 @@ def resources():
 @main.route("/trends")
 def trends():
     return render_template('trends.html', title='Trends')
+
+@main.route("/animations")
+def induction_techniques():
+    return render_template('aatest.html', title='Dream')

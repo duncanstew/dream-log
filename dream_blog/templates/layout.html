@@ -12,7 +12,7 @@
         <title> Dream Journal</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
     </head>
     <body class="bg-gray-400 font-sans leading-normal tracking-normal">
         <header class="text-gray-300 body-font bg-gray-700">
@@ -56,7 +56,7 @@
           </header>
     
         <!--Container-->
-        <div class="container bg-gray-400 mx-auto mt-24 md:mt-18">
+        <div class="container bg-gray-400 mt-24 mx-auto md:mt-18">
             {% with messages = get_flashed_messages(with_categories=true) %} <!-- Grab categories with the with_categories=true-->
                 {% if messages %}
                     {% for category, message in messages %}
