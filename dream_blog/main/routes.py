@@ -20,6 +20,6 @@ def resources():
 def trends():
     return render_template('trends.html', title='Trends')
 
-@main.route("/animations")
+@main.route("/induction_techniques")
 def induction_techniques():
-    return render_template('aatest.html', title='Dream')
+    return render_template('induction_techniques.html', title='Dream')
