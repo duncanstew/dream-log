@@ -62,7 +62,10 @@
         </header>
   
       <!--Container-->
-      <div class="container bg-gray-400 mt-24 mx-auto md:mt-18">
+      <div class="bg-gray-400 mt-24 mx-auto md:mt-10">
+        <div class="max-w-2xl mx-auto">
+
+        
           {% with messages = get_flashed_messages(with_categories=true) %} <!-- Grab categories with the with_categories=true-->
               {% if messages %}
                   {% for category, message in messages %}
@@ -78,6 +81,8 @@
                   {% endfor %}
               {% endif %}
           {% endwith %}
+
+        </div>
           {% block content %} {% endblock %}    
       </div>
   

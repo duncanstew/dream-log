@@ -4,6 +4,8 @@ new fullpage("#fullpage", {
   //options here
   autoScrolling: true,
   navigation: true,
+  navigationPosition: 'left',
+  navigationTooltips: ['Explained','Dream Induced','WBTB','Mnemonic','Wake Induced'],
   onLeave: (origin, destination, direction) => {
     const section = destination.item;
     const title = section.querySelector("h1");

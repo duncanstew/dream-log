@@ -20,8 +20,8 @@
     <link rel="stylesheet" href="../static/styles/technique.css" />
 </head>
 <body class="bg-gray-400 font-sans leading-normal tracking-normal">
-    <header class="text-gray-300 body-font bg-gray-700 ">
-        <div class="container mx-auto flex flex-wrap p-3 flex-col md:flex-row items-center z-10">
+    <header class="text-gray-300 body-font bg-gray-700 absolute z-50 w-full">
+        <div class="container mx-auto flex flex-wrap p-3 flex-col md:flex-row items-center relative">
           <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
             <a class="mr-5 hover:text-gray-900" href="{{ url_for('main.home')}}" > Posts </a>
             <a class="mr-5 hover:text-gray-900" href="{{ url_for('main.resources')}}"> Resources</a>
@@ -61,10 +61,11 @@
       </header>
 
     <!--Container-->
-    <div class="container bg-gray-400 ml-24 md:mt-18 z-20">
+    <div class="bg-gray-400 mx-auto md:mt-18 relative">
         <div id="fullpage">
             <section class="section s1">
-              <h1> Lucid Dreaming</h1>
+              <h1> Lucid Dreaming Explained</h1>
+              <p class="text-3xl ml-64"> Information and etc here</p>
             </section>
             <section class="section s2">
               <h1> Dream Induced</h1>
@@ -77,9 +78,19 @@
                 <p>
                   saepe eligendi, dicta velit at quod dolores asperiores facilis
                   nostrum eius molestias et maxime earum? Tenetur nam magni quae
-                  tempore beatae rerum impedit quasi id iste sapiente, amet asperiores
-                  maxime eius.
+                  tempore.
                 </p>
+                <p>
+                  saepe eligendi, dicta velit at quod dolores asperiores facilis
+                  nostrum eius molestias et maxime earum? Tenetur nam magni quae
+                  tempore.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non nam
+                  inventore illum! Libero nisi optio consequuntur tenetur soluta
+                  debitis
+                </p>
+
               </div>
               <img src="../static/imgs/chair2.png" class="chair c2" />
               <img src="../static/imgs/chair3.png" class="chair c1" />
@@ -87,12 +98,25 @@
             </section>
             <section class="section s3">
               <h1> Wake Back To Bed</h1>
+              <p> Bullet 1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, fuga?</p>
+              <p> Bullet 2: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis fuga harum a amet ea.</p>
+              <p> Bullet 3: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam praesentium cumque reprehenderit sunt eos reiciendis!</p>
+              <p> Bullet 4: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi nisi ipsum quia blanditiis accusantium qui illo iure, natus beatae explicabo!</p>
+
             </section>
             <section class="section s4">
               <h1> Mnemoic Induced</h1>
+              <p> Bullet 1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, fuga?</p>
+              <p> Bullet 2: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis fuga harum a amet ea.</p>
+              <p> Bullet 3: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam praesentium cumque reprehenderit sunt eos reiciendis!</p>
+              <p> Bullet 4: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi nisi ipsum quia blanditiis accusantium qui illo iure, natus beatae explicabo!</p>
             </section>
             <section class="section s">
               <h1> Wake Induced</h1>
+              <p> Bullet 1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, fuga?</p>
+              <p> Bullet 2: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis fuga harum a amet ea.</p>
+              <p> Bullet 3: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam praesentium cumque reprehenderit sunt eos reiciendis!</p>
+              <p> Bullet 4: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi nisi ipsum quia blanditiis accusantium qui illo iure, natus beatae explicabo!</p>
             </section>
           </div>
       

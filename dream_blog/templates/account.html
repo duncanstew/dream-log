@@ -1,7 +1,9 @@
 {% extends "layout.html" %}
 {% block content %}
-    <div class="h-screen w-full flex flex-col">
-        <div class="flex flex-col justify-center w-full mx-auto max-w-xl">
+    <div class="h-screen w-full flex flex-row">
+        <div class="w-3/5 bg-blue-400 mx-auto">
+        </div>
+        <div class="flex flex-col w-full mx-auto max-w-md bg-green-300">
             <div class="flex flex-row">
                 <div class="prof-image h-24 w-24 mt-4 ml-2">
                     <img class="rounded-full h-24 w-24 object-cover" src="{{ image_file }}">
@@ -61,36 +63,5 @@
 
 
         </div>
-        <div class="">
-            <!-- 
-            <div class="my-12 flex flex-row flex-wrap jusify-between justify-center bg-green-400 ">
-                <div class="h-48 w-64 bg-gray-700 mx-12 my-6 rounded-lg">
-
-                </div>
-    
-                <div class="h-48 w-64 bg-gray-700 mx-12 my-6 rounded-lg">
-    
-                </div>
-    
-                <div class="h-48 w-64 bg-gray-700 mx-12 my-6 rounded-lg">
-    
-                </div>
-    
-                <div class="h-48 w-64 bg-gray-700 mx-12 my-6 rounded-lg">
-    
-                </div>
-    
-                <div class="h-48 w-64 bg-gray-700 mx-12 my-6 rounded-lg">
-    
-                </div>
-    
-                <div class="h-48 w-64 bg-gray-700 mx-12 my-6 rounded-lg">
-    
-                </div>
-            </div>
-
-            -->
-        </div>
-
     </div>
 {% endblock content %} 
