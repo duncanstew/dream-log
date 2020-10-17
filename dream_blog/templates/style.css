@@ -21628,6 +21628,44 @@ video {
           animation: bounce 1s infinite;
 }
 
+#star1,#star2 {
+  -webkit-animation: fadeIn 2s infinite alternate;
+          animation: fadeIn 2s infinite alternate;
+}
+
+#star3 {
+  -webkit-animation: fadeIn 3.5s infinite alternate;
+          animation: fadeIn 3.5s infinite alternate;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s
+}
+
+#star4 {
+  -webkit-animation: fadeIn 3s infinite alternate;
+          animation: fadeIn 3s infinite alternate;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+#star5 {
+  -webkit-animation: fadeIn 1.5s infinite alternate;
+          animation: fadeIn 1.5s infinite alternate;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+@-webkit-keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;

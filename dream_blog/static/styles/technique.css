@@ -49,4 +49,34 @@
   .description p {
     margin: 50px 0px;
   }
+
+  #star1,#star2 {
+    animation: fadeIn 2s infinite alternate;
+    
+}
+
+
+#star3 {
+    animation: fadeIn 3.5s infinite alternate;
+    animation-delay: 1.5s
+}
+
+#star4 {
+    animation: fadeIn 3s infinite alternate;
+    animation-delay: 1s;
+    
+}
+
+#star5 {
+    animation: fadeIn 1.5s infinite alternate;
+    animation-delay: 2s;
+}
+
+
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+}
   
