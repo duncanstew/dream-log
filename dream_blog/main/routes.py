@@ -34,3 +34,8 @@ def induction_techniques():
 @main.route("/books")
 def books():
     return render_template('books.html', title='Books')
+
+
+@main.route("/dreamrecall")
+def dreamrecall():
+    return render_template('dreamrecall.html', title='Books')
