@@ -6,6 +6,10 @@ main = Blueprint('main', __name__)
 @main.route("/")
 @main.route("/home")
 def home():
+    return render_template('home.html', title='Home')
+
+@main.route("/posts")
+def posts():
     # How to paginate these
     # Options will be 'New, Best'
     page = request.args.get('page', 1, type=int)
@@ -18,7 +22,6 @@ def trending():
     posts = Post.query.order_by(Post.upvotes.desc()).paginate(page=page, per_page=6)
     return render_template('posts.html', posts=posts)
 
-    
 @main.route("/resources")
 def resources():
     return render_template('resources.html', title='Resources')

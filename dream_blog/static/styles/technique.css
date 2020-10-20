@@ -8,7 +8,6 @@
   }
   
   .s1 {
-    background-image: url("../imgs/couch.jpg");
     background-size: cover;
   }
   .section h1 {
@@ -104,10 +103,151 @@
   }
 }
 
+#cloud_1, #cloud_2, #cloud_3 {
+  animation: cloudFade 10s infinite;
+}
+
+#moon_1, #moon_2 {
+  animation: moonFade 10s infinite;
+}
+
+#Money {
+  animation: moneyFade 10s infinite;
+}
+
+#Graph {
+  animation: graphFade 10s infinite;
+}
+
+#clock {
+  animation: clockFade 10s infinite;
+}
+
+#hour {
+  animation: rotation 18s ease-in-out infinite;
+  transform-origin: 49% 51%;
+}
+
+#seconds {
+  animation: rotation 6s ease-in-out infinite;
+  transform-origin: 49% 51%;
+}
+
+#minutes {
+  animation: rotation 12s ease-in-out infinite;
+  transform-origin: 49% 51%;
+}
+
+#off_screen {
+  animation: fadeScreen 10s infinite ease-in;
+}
+
+#off_logo{
+  animation: fadeLogo 10s infinite ease-in;
+}
+
+@keyframes fadeLogo {
+  0%,60% {
+    opacity: 0;
+  }
+  70%, 100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeScreen {
+  from {
+    opacity: 0;
+  }
+  50%, 100% {
+    opacity: 1;
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg)
+  }
+}
 
 @keyframes fadeIn {
     from{
         opacity: 0;
     }
 }
-  
+
+@keyframes cloudFade {
+  0% {
+      opacity: 0;
+  }
+  35%{
+    opacity: 1;
+  }
+  45%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes moonFade {
+  0% {
+      opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  60%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes clockFade {
+  0% {
+      opacity: 0;
+  }
+  25%{
+    opacity: 1;
+  }
+  35%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes graphFade {
+  0% {
+      opacity: 0;
+  }
+  60%{
+    opacity: 1;
+  }
+  70%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes moneyFade {
+  0% {
+      opacity: 0;
+  }
+  75%{
+    opacity: 1;
+  }
+  85%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes clockFade {
+  0% {
+      opacity: 0;
+  }
+  30%{
+    opacity: 1;
+  }
+  40%, 100% {
+    opacity: 0;
+  }
+}
+
