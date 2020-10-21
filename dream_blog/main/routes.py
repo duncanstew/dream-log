@@ -41,4 +41,8 @@ def books():
 
 @main.route("/dreamrecall")
 def dreamrecall():
-    return render_template('dreamrecall.html', title='Books')
+    return render_template('dreamrecall.html', title='Dream Recall')
+
+@main.route("/realitytesting")
+def realitytesting():
+    return render_template('realitytesting.html', title='Reality')
