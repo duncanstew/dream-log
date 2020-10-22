@@ -46,3 +46,7 @@ def dreamrecall():
 @main.route("/realitytesting")
 def realitytesting():
     return render_template('realitytesting.html', title='Reality')
+
+@main.route("/research")
+def research():
+    return render_template('research.html', title='Research')
