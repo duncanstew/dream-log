@@ -32,7 +32,7 @@ def trends():
 
 @main.route("/induction_techniques")
 def induction_techniques():
-    return render_template('induction_techniques.html', title='Dream')
+    return render_template('induction_techniques.html', title='Induction')
 
 @main.route("/books")
 def books():
@@ -50,3 +50,7 @@ def realitytesting():
 @main.route("/research")
 def research():
     return render_template('research.html', title='Research')
+    
+@main.route("/technology")
+def technology():
+    return render_template('technology.html', title='Technology')
