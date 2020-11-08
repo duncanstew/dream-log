@@ -11,22 +11,22 @@
     background-size: cover;
   }
   .section h1 {
-    font-size: 3vw;
+    font-size: 4vw;
     position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -20%);
+    top: 10%;
+    left: 15%;
+    transform: translate(-15%, -10%);
     background: linear-gradient(to left, #87c7df, #648896);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   
   .s2 {
-    background: linear-gradient(to left top, rgb(189, 193, 199), white);
+    background: linear-gradient(to right, #2A2767, #998BAF);
   }
   .s2 h1 {
-    font-size: 40px;
-    background: linear-gradient(to left, #87c7df, #648896);
+    font-size: 56px;
+    background: white;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -98,13 +98,10 @@
   }
 }
 
-#cloud_1, #cloud_2, #cloud_3 {
+#cloud_1 {
   animation: cloudFade 10s infinite;
 }
 
-#moon_1, #moon_2 {
-  animation: moonFade 10s infinite;
-}
 
 #Money {
   animation: moneyFade 10s infinite;

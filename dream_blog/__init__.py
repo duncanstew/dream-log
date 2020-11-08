@@ -5,6 +5,7 @@ from flask_bcrypt import Bcrypt
 from flask_login import LoginManager
 from flask_mail import Mail
 from dream_blog.config import Config
+from flask_wtf.csrf import CSRFProtect
 
 # Setting instance of flask class, __name__ is special vairable that is name of the module. Flask knows hwere to look for templates and static files
 
@@ -19,12 +20,14 @@ mail = Mail()
 
 def create_app(config_class=Config):
     app = Flask(__name__)
-    app.config.from_object(Config)  
+    app.config.from_object(Config)
+    csrf = CSRFProtect(app)  
 
     db.init_app(app)
     bcrypt.init_app(app)
     login_manager.init_app(app)
     mail.init_app(app)
+    csrf.init_app(app)
     # import blueprint objects from each package
     # Have to import routes after the app has been instantiated
     from dream_blog.users.routes import users
