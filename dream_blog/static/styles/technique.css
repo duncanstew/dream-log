@@ -7,24 +7,35 @@
     font-family: "Poppins", sans-serif;
   }
   
-  .s1 {
-    background-size: cover;
-  }
   .section h1 {
     font-size: 4vw;
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 15%;
-    transform: translate(-15%, -10%);
+    transform: translate(-15%, -5%);
     background: linear-gradient(to left, #87c7df, #648896);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   
-  .s2 {
+  .s1,.s2,.s3,.s4 {
     background: linear-gradient(to right, #2A2767, #998BAF);
   }
   .s2 h1 {
+    font-size: 56px;
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .s3 h1 {
+    font-size: 56px;
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .s4 h1 {
     font-size: 56px;
     background: white;
     -webkit-background-clip: text;
